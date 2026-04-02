@@ -5,8 +5,8 @@ module.exports = {
       script: 'uv',
       args: 'run uvicorn main:app --host 0.0.0.0 --port 8000',
       cwd: './',
-      instances: 1,
-      exec_mode: 'fork',
+      instances: 4,
+      exec_mode: 'cluster',
       watch: false,
       max_memory_restart: '500M',
       env: {
